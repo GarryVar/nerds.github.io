@@ -1,0 +1,134 @@
+.studio__inner {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding-top: 83px;
+  padding-bottom: 70px;
+
+  min-height: 530px;
+
+  border-top: solid 2px $gray;
+}
+
+.studio__block {
+  &:first-child {
+    width: 800px;
+  }
+
+  &:nth-child(2) {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+
+    width: 360px;
+
+    background-image: url("../img/nerds-bg.png");
+    background-repeat: no-repeat;
+    background-size: 360px auto;
+  }
+
+  &:nth-child(3) {
+    margin-top: 80px;
+    width: 100%;
+  }
+
+  h3 {
+    margin: 0;
+    margin-bottom: 35px;
+
+    color: $black;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+}
+
+.studio__title {
+  margin: 0;
+  margin-bottom: 40px;
+
+  max-width: 650px;
+
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.studio__text {
+  margin-bottom: 52px;
+
+  min-width: 560px;
+
+  font-size: 16px;
+}
+
+.studio__item {
+  position: relative;
+
+  margin-bottom: 37px;
+  padding-left: 40px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+
+    top: 50%;
+    left: 0;
+
+    width: 26px;
+    height: 2px;
+
+    background-color: $red;
+
+    transform: translateY(-50%);
+  }
+}
+
+.studio__slogan {
+  margin-bottom: 50px;
+  padding-top: 60px;
+
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.studio__conditions-list {
+  display: flex;
+  justify-content: space-between;
+
+  max-width: 360px;
+}
+
+.studio__conditions-item {
+  max-width: 100px;
+
+  span {
+    display: block;
+
+    margin-bottom: 30px;
+
+    width: 100%;
+
+    font-size: 45px;
+  }
+
+  p {
+    line-height: 18px;
+    font-size: 16px;
+  }
+}
+
+.studio__brand-list {
+  display: flex;
+
+  border-top: solid 2px $gray;
+  border-bottom: solid 2px $gray;
+}
+
+.studio__brand-item {
+  min-width: 300px;
+
+}

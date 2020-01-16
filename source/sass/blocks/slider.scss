@@ -1,0 +1,135 @@
+.slider {
+  &--bg-gray {
+    background-color: $gray;
+  }
+}
+
+.slider__inner {
+  position: relative;
+
+  overflow: hidden;
+}
+
+.slider__list {
+  position: relative;
+  left: 0;
+  display: flex;
+
+  transition: ease 1.5s;
+}
+
+.slider__item {
+  display: flex;
+
+  min-width: 100%;
+  min-height: 431px;
+
+  &:first-child {
+    background-image: url("../img/nerds-index-slide1.webp");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 760px auto;
+  }
+
+  &:nth-child(2) {
+    background-image: url("../img/nerds-index-slide2.webp");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 760px auto;
+  }
+
+  &:last-child {
+    background-image: url("../img/nerds-index-slide3.webp");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 760px auto;
+
+    .slider__item-content{
+      min-width: 56px;
+    }
+  }
+}
+
+.slider__item-content {
+  max-width: 400px;
+}
+
+.slider__slogan {
+  margin-bottom: 27px;
+  padding-top: 75px;
+  padding-left: 20px;
+
+  color: #000000;
+  line-height: 55px;
+  font-size: 55px;
+}
+
+.slider__text {
+  margin-bottom: 41px;
+  padding-left: 20px;
+
+  max-width: 325px;
+}
+
+.slider__more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 22px;
+  padding: 0;
+
+  width: 240px;
+  height: 50px;
+
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  background-color: $red;
+
+  &:hover,
+  &:focus {
+    background-color: #e74246;
+  }
+
+  &:active {
+    color: #ffffff57;
+  }
+
+  border: none;
+  border-radius: 4px;
+
+  cursor: pointer;
+}
+
+.slider__toggles {
+  position: absolute;
+  bottom: 94px;
+  left: 47%;
+
+  display: flex;
+  justify-content: space-between;
+
+  width: 90px;
+  height: 18px;
+
+  transfom: translateX(-50%);
+}
+
+.slider__toggle-dot {
+  position: relative;
+
+  width: 18px;
+  height: 18px;
+  padding: 0;
+
+  border: none;
+  border-radius: 50%;
+  background-color: white;
+
+  font-size: 0;
+
+  cursor: pointer;
+}
