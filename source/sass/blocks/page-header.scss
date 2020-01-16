@@ -1,0 +1,23 @@
+.page-header {
+  &--bg-gray {
+    background-color: $gray;
+  }
+}
+
+.page-header__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  min-height: 545px;
+
+  background-color: $gray;
+}
+
+.page-header__link {
+  display: flex;
+  align-items: flex-end;
+
+  width: 300px;
+  height: 114px;
+}

@@ -1,0 +1,21 @@
+.site-list__item {
+  min-width: 100px;
+  min-height: 38px;
+
+  &:nth-child(3) {
+    min-width: 140px;
+    text-align: center;
+  }
+}
+
+.site-list__link {
+  color: $text;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  &[href]:hover,
+  &[href]:focus {
+    color: $red;
+  }
+}
