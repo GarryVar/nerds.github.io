@@ -1,11 +1,9 @@
 "use strict"
 
 const gulp = require("gulp"),
-      concat = require("gulp-concat"),
       htmlmin = require("gulp-htmlmin"),
       csso = require("gulp-csso"),
       imagemin = require("gulp-imagemin"),
-      minify = require("gulp-minify"),
       plumber = require("gulp-plumber"),
       del = require("del"),
       babel = require("gulp-babel"),
@@ -13,7 +11,6 @@ const gulp = require("gulp"),
       reload = server.reload,
       postcss = require("gulp-postcss"),
       posthtml = require("gulp-posthtml"),
-      include = require("posthtml-include"),
       rename = require("gulp-rename"),
       sass = require("gulp-sass"),
       sourcemaps = require("gulp-sourcemaps"),
@@ -44,9 +41,6 @@ gulp.task("css", () => {
 //html
 gulp.task("html", () => {
   return gulp.src("source/*.html")
-        .pipe(posthtml([
-          include()
-          ]))
         .pipe(htmlmin({collapseWhitespace: true }))
         .pipe(gulp.dest("build"))
 });
