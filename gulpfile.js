@@ -50,6 +50,7 @@ gulp.task("js", () => {
   return gulp.src("source/js/**/*.js")
         .pipe(babel())
         .pipe(uglify())
+        .pipe(rename({suffix: ".min"}))
         .pipe(gulp.dest("build/js"))
         .pipe(reload({stream: true}))
 });
