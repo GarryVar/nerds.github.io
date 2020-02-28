@@ -1,0 +1,43 @@
+.sort__inner {
+  margin-left: 10px;
+  padding-left: 10px;
+  width: 800px;
+}
+
+.sort__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sort__title {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.sort__list {
+  display: flex;
+  justify-content: space-between;
+
+  width: 300px;
+}
+
+.sort__link {
+  color: $text;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.sort__button {
+  padding: 0;
+
+  width: 10px;
+  height: 10px;
+
+  font-size: 0;
+
+  border: 0;
+
+  cursor: pointer;
+}

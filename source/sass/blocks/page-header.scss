@@ -9,7 +9,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
 
-  min-height: 545px;
+  min-height: 116px;
 
   background-color: $gray;
 }
@@ -20,4 +20,12 @@
 
   width: 300px;
   height: 114px;
+}
+
+.page-header__title {
+  display: flex;
+  align-items: center;
+
+  min-height: 245px;
+  font-size: 55px;
 }

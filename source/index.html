@@ -33,13 +33,16 @@
                   <li class="site-list__item"><a class="site-list__link" href="catalog.html">магазин</a></li>
                   <li class="site-list__item"><a class="site-list__link" href="">контакты</a></li>
                 </ul>
+
                 <div class="nav__user-card">
                   <button class="nav__user-btn" type="button">корзина</button>
                 </div>
+
               </div>
             </nav>
 
             <section class="slider slider--bg-gray">
+              <h2 class="visually-hidden">Слайдер приемуществ</h2>
               <div class="slider__inner">
                 <ul class="slider__list" id="slider">
                   <li class="slider__item">
@@ -66,10 +69,11 @@
                     </div>
                   </li>
                 </ul>
+
                 <div class="slider__toggles">
-                  <button class="slider__toggle-dot" type="button">Переключить слайдер</button>
-                  <button class="slider__toggle-dot" type="button">Переключить слайдер</button>
-                  <button class="slider__toggle-dot" type="button">Переключить слайдер</button>
+                  <button class="slider__toggle-dot" type="button" data-toggle="first">Переключить слайдер</button>
+                  <button class="slider__toggle-dot" type="button" data-toggle="second">Переключить слайдер</button>
+                  <button class="slider__toggle-dot" type="button" data-toggle="third">Переключить слайдер</button>
                 </div>
               </div>
             </section>
@@ -88,7 +92,7 @@
               <ol class="advantages__list">
                 <li class="advantages__list-item">
                   <picture>
-                    <source srcset="img/illustration-1.webp">
+                    <source srcset="img/illustration-1.webp" type="image/webp">
                     <img class="advantages__image"
                       src="img/illustration-1.png"
                       alt="Ноутбук на красном фоне"
@@ -102,7 +106,7 @@
 
                 <li class="advantages__list-item">
                   <picture>
-                    <source srcset="img/illustration-2.webp">
+                    <source srcset="img/illustration-2.webp" type="image/webp">
                     <img class="advantages__image"
                       src="img/illustration-2.png"
                       alt="два мобильных телефона на зелёном фоне"
@@ -116,7 +120,7 @@
 
                 <li class="advantages__list-item">
                   <picture>
-                    <source srcset="img/illustration-3.webp">
+                    <source srcset="img/illustration-3.webp" type="image/webp">
                     <img class="advantages__image"
                       src="img/illustration-3.png"
                       alt="Доска с графиком на желтом фоне"
@@ -177,7 +181,7 @@
                   <li class="studio__brand-item">
                     <a class="studio__brand-link" href="#">
                       <picture>
-                        <source sercset="img/">
+                        <!-- <source srcset="img/logo-1.webp" type="image/webp"> -->
                         <img class="studio__brand-image"
                             src="img/logo-1.png"
                             alt="логотип 'Htmlacademy'"
@@ -190,7 +194,7 @@
                   <li class="studio__brand-item">
                     <a class="studio__brand-link" href="#">
                       <picture>
-                        <source sercset="img/">
+                        <!-- <source srcset="img/logo-2.webp" type="image/webp"> -->
                         <img class="studio__brand-image"
                             src="img/logo-2.png"
                             alt="Логотип barbershop 'Borodinkski'"
@@ -203,7 +207,7 @@
                   <li class="studio__brand-item">
                     <a class="studio__brand-link" href="#">
                       <picture>
-                        <source sercset="img/">
+                        <!-- <source srcset="img/logo-3.webp" type="image/webp"> -->
                         <img class="studio__brand-image"
                             src="img/logo-3.png"
                             alt="Логотип 'Pink'"
@@ -216,7 +220,7 @@
                   <li class="studio__brand-item">
                     <a class="studio__brand-link" href="#">
                       <picture>
-                        <source sercset="img/">
+                        <!-- <source srcset="img/logo-4.webp" type="image/webp"> -->
                         <img class="studio__brand-image"
                             src="img/logo-4.png"
                             alt="Логотип 'Мишка'"
@@ -238,6 +242,19 @@
         <!-- Карта проезда -->
         <div class="page-footer__map">
           <h3 class="visually-hidden">Карта проезда к нам</h3>
+
+          <!-- Контакты -->
+          <div class="contacts contacts--position">
+            <div class="contacts__body">
+              <h3 class="contacts__title">nёrds design studio</h3>
+              <p class="contacts__text">191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8</p>
+              <p class="contacts__text">тел. +7(812) 275 75 75</p>
+              <a class="contacts__write-us" href="">Напишите нам</a>
+
+            </div>
+          </div>
+          <!-- /Контакты -->
+
           <iframe src="https://yandex.ru/map-widget/v1/-/CKAV7WLw" width="1400" height="418"></iframe>
           <a href="https://yandex.ru/maps/-/CKAZ4P07">
             <img src="img/map.png"
@@ -285,6 +302,6 @@
         </div>
       </footer>
 
-      <script src="js/script.js"></script>
+      <script src="js/script.min.js"></script>
     </body>
   </html>
