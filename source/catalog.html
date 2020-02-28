@@ -51,7 +51,7 @@
         <section class="cost">
           <div class="cost__inner">
             <div class="cost__body">
-              <form action="" class="cost__form">
+              <form class="cost__form" action="https://echo.htmlacademy.ru">
                 <fieldset class="cost__range">
                   <legend class="visually-hidden">Стоимость</legend>
                   <h3 class="cost__title">Стоимость:</h3>
@@ -69,21 +69,21 @@
                   <legend class="cost__title">Сетка:</legend>
                   <ol class="cost__layout-list">
                     <li class="cost__layout-item">
-                      <input class="visually-hidden" type="radio">
+                      <input class="visually-hidden" id="grid" type="radio">
                       <span class="cost__radio"></span>
-                      <label for="">Адаптивная</label>
+                      <label for="grid">Адаптивная</label>
                     </li>
 
                     <li class="cost__layout-item">
-                      <input class="visually-hidden" type="radio">
+                      <input class="visually-hidden" id="fix" type="radio">
                       <span class="cost__radio"></span>
-                      <label for="">Фиксированая</label>
+                      <label for="fix">Фиксированая</label>
                     </li>
 
                     <li class="cost__layout-item">
-                      <input class="visually-hidden" type="radio">
+                      <input class="visually-hidden" id="respons" type="radio">
                       <span class="cost__radio"></span>
-                      <label for="">Резиновая</label>
+                      <label for="respons">Резиновая</label>
                     </li>
                   </ol>
                 </fieldset>
@@ -92,28 +92,28 @@
                   <legend class="cost__title">Особенности:</legend>
                   <ol class="cost__feature-list">
                     <li class="feature-item">
-                      <input type="checkbox">
-                      <label for="">Слайдер</label>
+                      <input type="checkbox" id="slider">
+                      <label for="slider">Слайдер</label>
                     </li>
 
                     <li class="feature-item">
-                      <input type="checkbox">
-                      <label for="">Блок приемуществ</label>
+                      <input type="checkbox" id="features">
+                      <label for="features">Блок приемуществ</label>
                     </li>
 
                     <li class="feature-item">
-                      <input type="checkbox">
-                      <label for="">Новости</label>
+                      <input type="checkbox" id="news">
+                      <label for="news">Новости</label>
                     </li>
 
                     <li class="feature-item">
-                      <input type="checkbox">
-                      <label for="">Галерея</label>
+                      <input type="checkbox" id="gallery">
+                      <label for="gallery">Галерея</label>
                     </li>
 
                     <li class="feature-item">
-                      <input type="checkbox">
-                      <label for="">Корзина</label>
+                      <input type="checkbox" id="trash">
+                      <label for="trash">Корзина</label>
                     </li>
                   </ol>
                 </fieldset>
@@ -125,41 +125,43 @@
 
         <section class="sort">
           <div class="sort__inner">
-          <div class="sort__type">
-            <form action="" class="sort__form">
-              <fieldset class="sort__body">
-                <legend class="visually-hidden">Сортировка</legend>
-                <h3 class="sort__title">Сортировать:</h3>
-                <ol class="sort__list">
-                  <li class="sort__item">
-                    <a class="sort__link" href="">По цене</a>
-                  </li>
+            <div class="sort__type">
+              <form class="sort__form" action="https://echo.htmlacademy.ru">
+                <fieldset class="sort__body">
+                  <legend class="visually-hidden">Сортировка</legend>
+                  <h3 class="sort__title">Сортировать:</h3>
+                  <ol class="sort__list">
+                    <li class="sort__item">
+                      <a class="sort__link" href="">По цене</a>
+                    </li>
 
-                  <li class="sort__item">
-                    <a class="sort__link" href="">По типу</a>
-                  </li>
+                    <li class="sort__item">
+                      <a class="sort__link" href="">По типу</a>
+                    </li>
 
-                  <li class="sort__item">
-                    <a class="sort__link" href="">По названию</a>
-                  </li>
-                </ol>
-                <div class="sort__button-group">
-                  <button class="sort__button" type="button">По убыванию</button>
-                  <button class="sort__button" type="button">По возростанию</button>
-                </div>
-              </fieldset>
-            </form>
-          </div>
-          <div class="sort__result">
-            <ol class="sort__templates">
-              <li class="sort__templates-item"></li>
-              <li class="sort__templates-item"></li>
-              <li class="sort__templates-item"></li>
-              <li class="sort__templates-item"></li>
-              <li class="sort__templates-item"></li>
-              <li class="sort__templates-item"></li>
-            </ol>
-          </div>
+                    <li class="sort__item">
+                      <a class="sort__link" href="">По названию</a>
+                    </li>
+                  </ol>
+                  <div class="sort__button-group">
+                    <button class="sort__button" type="button">По убыванию</button>
+                    <button class="sort__button" type="button">По возростанию</button>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+
+            <div class="sort__result">
+              <ol class="sort__templates">
+                <li class="sort__templates-item"></li>
+                <li class="sort__templates-item"></li>
+                <li class="sort__templates-item"></li>
+                <li class="sort__templates-item"></li>
+                <li class="sort__templates-item"></li>
+                <li class="sort__templates-item"></li>
+              </ol>
+            </div>
+
           </div>
         </section>
       </div>
