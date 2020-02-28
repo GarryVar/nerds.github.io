@@ -1,14 +1,12 @@
 (() => {
-  const _DOC = document, left = 0;
+  const _DOC = document;
 
   function sliderPos() {
-    const sliderWidth = [0, -100, -200];
-    return sliderWidth;
+    return [0, -100, -200];
   }
 
   function slider() {
-    const slider = _DOC.getElementById('slider');
-    return slider;
+    return _DOC.getElementById('slider');
   };
 
   function sliderFunction(list, width) {
@@ -31,4 +29,5 @@
         sliderFunction(slider, sliderPos()[2]);
     }
   });
+
 })();
