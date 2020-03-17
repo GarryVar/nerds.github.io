@@ -1,11 +1,13 @@
 .cost__inner {
   margin-right: 10px;
   padding-right: 10px;
+  padding-bottom: 60px;
+
   width: 300px;
 }
 
 .cost__title {
-  margin-bottom: 57px;
+  margin-bottom: 60px;
 
   color: rgb(0, 0, 0);
   font-size: 18px;
@@ -56,10 +58,16 @@
   }
 }
 
+.cost__layout {
+  margin-bottom: 50px;
+}
+
 .cost__layout-list {
   display: flex;
   flex-direction: column;
   align-content: space-between;
+
+  margin-right: -20px;
 
   height: 105px;
 }
@@ -86,4 +94,34 @@
   background-color:  #b8b8b8;
   border-radius: 50%;
   box-shadow: 0 0 0 3px rgb(255, 255, 255), 0 0 0 6px #b8b8b8;
+}
+
+.cost__feature {
+  margin-bottom: 40px;
+}
+
+.cost__form-submit {
+  width: 261px;
+  height: 50px;
+
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  background-color: $gray;
+
+  border: 0;
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #dfdfdf;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.2);
+    box-shadow: inset -1px 3px 1px 0 rgba(0, 0, 0, 0.2);
+  }
 }
